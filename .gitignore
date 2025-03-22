@@ -1,0 +1,44 @@
+# Keep the base application.yml in version control
+# But ignore environment-specific configurations
+application-prod.yml
+application-dev.yml
+application-local.yml
+application-test.yml
+
+# Other common files to ignore
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### VS Code ###
+.vscode/
+
+### Logs ###
+logs/
+*.log
+
+### Local database files ###
+*.db
+*.sqlite
+
+### Secret/credential files ###
+**/resources/secrets/
+*secret*
+*credentials*
